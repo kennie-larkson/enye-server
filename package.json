@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node --exec babel-node ./index.js",
-    "dev": "nodemon --exec babel-node ./index.js"
+    "dev": "nodemon --exec babel-node ./index.js",
+    "build": "webpack"
   },
+  "heroku-run-build-script": true,
   "keywords": [
     "express",
     "rest-api",
