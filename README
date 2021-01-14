@@ -1,0 +1,8 @@
+### REST API EXPRESS SERVER
+This application exposes a RESTful endpoint by integrating a public API
+
+### HOW TO RUN APPLICATION
+1. cd into your favorite directory and run git clone https://github.com/kennie-larkson/enye-server.git
+2. cd into the application root directory and run yarn dev or npm run dev
+After the above steps your application should be running on port 4000
+Navigate to localhost:4000/api/rates or localhost:4000/api/rates?base=CZK to get data
