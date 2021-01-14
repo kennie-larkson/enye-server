@@ -7,7 +7,6 @@ dotenv.config();
 const port = process.env.PORT;
 const app = express();
 
-const queryParams = "?base=CZK&symbols=EUR,GBP,USD";
 const baseUrl =
   "https://api.exchangeratesapi.io/latest?base=CZK&symbols=EUR,GBP,USD";
 const defaultUrl = "https://api.exchangeratesapi.io/latest";
