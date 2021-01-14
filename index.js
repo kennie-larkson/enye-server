@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import axios from "axios";
 
 dotenv.config();
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 const app = express();
 
 const baseUrl =
