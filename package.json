@@ -1,0 +1,29 @@
+{
+  "name": "enye-server",
+  "version": "1.0.0",
+  "description": "EXPRESS REST API ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon --exec babel-node ./index.js",
+    "build": "mkdir dist && babel src -s -d dist"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "http-sever",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Lawal, Abdulrafiu Kehinde",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
