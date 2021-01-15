@@ -4,12 +4,10 @@
   "description": "EXPRESS REST API ",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./build",
-    "dev": "nodemon --exec babel-node ./src/index.js",
-    "build": "npm run clean && npm run babel-build",
-    "babel-build": "babel -d ./build ./src -s",
-    "clean": "mkdir build"
+    "start": "node ./src/index",
+    "build": "webpack"
   },
+  "heroku-run-build": true,
   "type": "module",
   "keywords": [
     "express",
