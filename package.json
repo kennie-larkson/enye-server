@@ -10,6 +10,7 @@
     "babel-build": "babel -d ./build ./src -s",
     "clean": "mkdir build"
   },
+  "type": "module",
   "keywords": [
     "express",
     "rest-api",
