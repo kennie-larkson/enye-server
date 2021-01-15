@@ -4,9 +4,11 @@
   "description": "EXPRESS REST API ",
   "main": "index.js",
   "scripts": {
-    "start": "node --exec babel-node ./index.js",
-    "dev": "nodemon --exec babel-node ./index.js",
-    "build": "mkdir dist && babel src -s -d dist"
+    "start": "npm run build && node ./build",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "build": "npm run clean && npm run babel-build",
+    "babel-build": "babel -d ./build ./src -s",
+    "clean": "mkdir build"
   },
   "keywords": [
     "express",
@@ -18,6 +20,7 @@
   "author": "Lawal, Abdulrafiu Kehinde",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -28,5 +31,12 @@
   },
   "engines": {
     "node": "12.16.1"
-  }
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
 }
